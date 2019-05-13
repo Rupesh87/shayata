@@ -1,57 +1,50 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Sacramento" rel="stylesheet">
+
+    <!-- Theme Style -->
+    <?= $this->Html->css(array(
+        'bootstrap',
+        'animate', 
+        'owl.carousel.min', 
+        'font-awesome.min', 
+        'ionicons.min',
+        'style'
+        )) ?>
+
     <?= $this->Html->meta('icon') ?>
-
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
-
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
-            </ul>
-        </div>
-    </nav>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
-        <?= $this->fetch('content') ?>
-    </div>
-    <footer>
-    </footer>
+    <?= $this->element('header') ?>
+    <?= $this->fetch('content') ?>
+    <?= $this->element('footer') ?>
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    <?= $this->Html->script(
+        array(
+            'jquery-3.2.1.min', 
+            'popper.min', 
+            'bootstrap.min', 
+            'owl.carousel.min', 
+            'jquery.waypoints.min', 
+            'main'
+            )
+        ) 
+    ?>
 </body>
 </html>
