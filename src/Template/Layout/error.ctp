@@ -16,32 +16,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <?= $this->Html->charset() ?>
     <title>
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
+    <!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+	<!-- Custom stlylesheet -->
+    <?= $this->Html->css('error_page.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <h1><?= __('Error') ?></h1>
-        </div>
-        <div id="content">
-            <?= $this->Flash->render() ?>
-
-            <?= $this->fetch('content') ?>
-        </div>
-        <div id="footer">
-            <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
-        </div>
+    <div id="notfound">
+		<div class="notfound">
+			<div class="notfound-404">
+				<h3>Oops! Page not found</h3>
+				<h1><span>4</span><span>0</span><span>4</span></h1>
+			</div>
+            <h2>we are sorry, but the page you requested was not found</h2>
+            <div id="footer">
+                <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
+            </div>
+		</div>
     </div>
+    <!-- <div id="content">
+        <?= $this->Flash->render() ?>
+
+        <?= $this->fetch('content') ?>
+    </div> -->
+    
 </body>
 </html>
