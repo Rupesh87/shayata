@@ -29,7 +29,33 @@
 
       </div>
 
-    </section>
+    </section><section class="services-section spad" style="padding:100px 0 0; background: #f6f8f9">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="service-box">
+						<h4><i class="fa fa-fire"></i>Our Values</h4>
+						<p>Excepteur sint occaecat cupidatat non, <br> sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
+						<a href="#" class="s-readmore">Readmore <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="service-box">
+						<h4><i class="fa fa-eye"></i>Our Vision</h4>
+						<p>Excepteur sint occaecat cupidatat non, <br> sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
+						<a href="#" class="s-readmore">Readmore <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="service-box">
+						<h4><i class="fa fa-heart"></i>Our Mission</h4>
+						<p>Excepteur sint occaecat cupidatat non, <br> sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
+						<a href="#" class="s-readmore">Readmore <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     <section class="section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 element-animate">
@@ -120,3 +146,17 @@
         </div>
       </div>
     </section>
+    <style>
+.service-box h4 i {
+    color: #dd3e3e;
+    margin-right: 10px; }
+    service-box .s-readmore {
+    color: #b7b7b7;
+    font-size: 17px;}
+    .service-box .s-readmore i {
+    color: #dd3e3e;
+}
+.s-readmore {
+  text-decoration:none !important;
+}
+    </style>
