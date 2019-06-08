@@ -55,6 +55,7 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
+        $this->set('page_type', $page[1]);
         $this->set(compact('page', 'subpage'));
 
         try {
@@ -67,4 +68,14 @@ class PagesController extends AppController
         }
     }
 
+    public function contact()
+    {
+        $this->autoRender =false;
+    }
+
+    public function about($page_type = null)
+    {
+        
+        $this->set('page_type', $page_type);
+    }
 }

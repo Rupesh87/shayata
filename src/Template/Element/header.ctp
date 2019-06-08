@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample05">
                 <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <?php echo $this->Html->link(__('Home', true), array('controller' => 'pages', 'action' => 'home'), array('class' => 'nav-link'));?>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown"
@@ -44,10 +44,10 @@
                         <a class="nav-link" href="news.html">Success Stories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <?php echo $this->Html->link(__('About Us', true), array('controller' => 'pages', 'action' => 'about_us'), array('class' => 'nav-link'));?>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <?php echo $this->Html->link(__('Contact', true), array('controller' => 'pages', 'action' => 'contact'), array('class' => 'nav-link'));?>
                     </li>
                 </ul>
 
@@ -55,3 +55,10 @@
         </div>
     </nav>
 </header>
+<script>
+    $(document).ready(function(){
+        var url = window.location.href;
+        var url = url.replace('http://localhost','');
+        $('a[href="'+url+'"]').addClass('active');
+    });
+</script>

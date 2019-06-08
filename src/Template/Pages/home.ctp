@@ -1,6 +1,6 @@
 
  <section class="home-slider owl-carousel">
-      <div class="slider-item dark" style="background-image: url('img/slider-1.jpg');">
+      <div class="slider-item dark" style="background-image: url('https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
 
         <div class="container">
           <div class="row slider-text align-items-center">
@@ -15,7 +15,7 @@
 
       </div>
 
-      <div class="slider-item" style="background-image: url('img/slider-2.jpg');">
+      <div class="slider-item" style="background-image: url('https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
         <div class="container">
           <div class="row slider-text align-items-center">
             <div class="col-md-6 col-sm-12 element-animate">

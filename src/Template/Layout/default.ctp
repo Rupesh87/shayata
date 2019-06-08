@@ -24,6 +24,12 @@
         'style'
         )) ?>
 
+    <?= $this->Html->script(
+        array(
+            'jquery-3.2.1.min'
+            )
+        ) 
+    ?>
     <?= $this->Html->meta('icon') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -34,12 +40,11 @@
     <?= $this->element('header') ?>
     <?= $this->fetch('content') ?>
     <?= $this->element('footer') ?>
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    <!-- <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div> -->
     <?= $this->Html->script(
         array(
-            'jquery-3.2.1.min', 
             'popper.min', 
-            'bootstrap.min', 
+            'bootstrap.min',
             'owl.carousel.min', 
             'jquery.waypoints.min', 
             'main'
