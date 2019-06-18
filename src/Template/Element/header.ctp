@@ -10,8 +10,14 @@
                 </div>
                 <div class="col-6 text-right d-sm-flex d-flex">
                     <d class="ml-auto">
-                        <a href="#" class="btn">Sponsor</a>
-                        <a href="#" class="cta-btn">Login</a>
+                        <?php 
+                            echo $this->Html->link($this->Html->tag('i', '',array('class' => 'fa fa-phone') ) . __('  9841559898'), 
+                                array( 'action' => 'contact'), 
+                                array('class' => 'text-white', 'escape' => false));
+                            echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-envelope') ) . __('  abc@gmail.com'), 
+                                array( 'action' => 'contact'), 
+                                array('class' => 'text-white', 'escape' => false));
+                        ?>
                     </d>
                 </div>
             </div>
@@ -19,7 +25,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Adopted</a>
+            <?php echo $this->Html->link(__('SHAYATA NEPAL', true), array('controller' => 'pages', 'action' => 'index'), array('class' => 'navbar-brand'));?>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
                 aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,9 +62,9 @@
     </nav>
 </header>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         var url = window.location.href;
-        var url = url.replace('http://localhost','');
-        $('a[href="'+url+'"]').addClass('active');
+        var url = url.replace('http://localhost', '');
+        $('a[href="' + url + '"]').addClass('active');
     });
 </script>
