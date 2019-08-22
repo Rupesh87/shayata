@@ -12,7 +12,7 @@
 
                     <ul class="list-unstyled sidelink">
                         <li class="">
-                            <?php echo $this->Html->link(__('History', true), array('controller' => 'pages', 'action' => 'about_us'), array('class' => 'nav-link'));?>
+                            <?php echo $this->Html->link(__('History', true), array('controller' => 'pages', 'action' => 'about'), array('class' => 'nav-link'));?>
                         </li>
                         <li class="">
 

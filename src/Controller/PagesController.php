@@ -70,10 +70,10 @@ class PagesController extends AppController
 
     public function contact()
     {
-        
+
     }
 
-    public function about_us()
+    public function about()
     {
         
     }
