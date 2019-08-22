@@ -1,0 +1,2 @@
+<h2>Our Goal</h2>
+<p>To ensure life with health, education and livelihood opportunities of socially oppressed community by facilitating them in the mainstream of development with clean environment.</p>

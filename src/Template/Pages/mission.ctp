@@ -22,7 +22,7 @@
                             <?php echo $this->Html->link(__('Vision', true), array('controller' => 'pages', 'action' =>  'vision'), array('class' => 'nav-link'));?>
                         </li>
                         <li class="">
-                            <?php echo $this->Html->link(__('Our Values', true), array('controller' => 'pages', 'action' => 'our_values'), array('class' => 'nav-link'));?>
+                            <?php echo $this->Html->link(__('Our Goal', true), array('controller' => 'pages', 'action' => 'our_goal'), array('class' => 'nav-link'));?>
                         </li>
                     </ul>
                 </div>
@@ -42,3 +42,8 @@
         <!-- END row -->
     </div>
 </section>
+<style>
+    p {
+        text-align: justify;
+    }
+</style>

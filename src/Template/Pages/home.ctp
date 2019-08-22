@@ -1,7 +1,7 @@
 <?php $this->set('title_for_layout', 'Shayata Nepal');?>
 <section class="home-slider owl-carousel">
-    <div class="slider-item dark"
-        style="background-image: url('https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+    <div class="slider-item "
+        style="background-image: url('<?php echo $this->request->webroot?>/img/slider/slider2.jpg');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -12,18 +12,13 @@
                         in clean environment by means of awareness, advocacy and
                         social empowerment for the social transformation.
                     </p>
-                    <p>
-                        <?php echo $this->Html->link( ('Read More'),
-                        array('action' => 'mission'), array('class' => 'btn
-                        btn-primary', 'escape' => false) ); ?>
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="slider-item"
-        style="background-image: url('https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+        style="background-image: url('<?php echo $this->request->webroot?>/img/slider/slider1.jpg');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -33,17 +28,12 @@
                         Sahayata Nepal envision of healthy life in clean
                         environment with educated and affluent society.
                     </p>
-                    <p>
-                        <?php echo $this->Html->link( ('Read More'),
-                        array('action' => 'vision'), array('class' => 'btn
-                        btn-primary', 'escape' => false) ); ?>
-                    </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="slider-item"
-        style="background-image: url('https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+        style="background-image: url('<?php echo $this->request->webroot?>/img/slider/slider3.jpg');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -54,11 +44,6 @@
                         opportunities of socially oppressed community by
                         facilitating them in the mainstream of development with
                         clean environment.
-                    </p>
-                    <p>
-                        <?php echo $this->Html->link( ('Read More'),
-                        array('action' => 'our_goal'), array('class' => 'btn
-                        btn-primary', 'escape' => false) ); ?>
                     </p>
                 </div>
             </div>
@@ -75,11 +60,11 @@
             </div>
         </div>
         <div class="row element-animate">
-            <div class="col-md-6">
-                <img src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    alt="" style="width: 500px" />
+            <div class="col-md-3">
+                <img src="<?php echo $this->request->webroot . 'img/executive_director.jpg'; ?>"
+                    alt="" style="width: 245px; height:262px;" />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-9">
                 <div class="about_content">
                     <div class="about_text">
                         <p style="text-align: justify;">
@@ -94,12 +79,11 @@
                             located closer to capital city, Kathmandu, it is one
                             of the under developed district of Nepal. It stands
                             41st rank in Human Development Index (HDI) among 75
-                            districts of Nepal. Many parts of it are still
-                            inaccessible to road.
+                            districts of Nepal. Many parts of it are still inaccessible to road. Beside this, in the WASH sector also, there are many things to be improved as there is huge proportion of the population not having clean...
                         </p>
                     </div>
                     <div class="button about_button">
-                        <a href="#" class="btn btn-primary">Read more</a>
+                        <?php echo $this->Html->link('Read more', array('controller' => 'pages', 'action' => 'few_words_from_director'), array('escape' => false,  'class' => "btn btn-primary"));  ?>
                     </div>
                 </div>
             </div>
@@ -110,43 +94,43 @@
     <div class="container">
         <div class="row justify-content-center mb-3 element-animate">
             <div class="col-md-8 text-center">
-                <h2 class="text-uppercase heading mb-4">OUR PROJECTS</h2>
+                <h2 class="text-uppercase heading mb-4">OUR TEAM MEMBERS</h2>
             </div>
         </div>
 
         <div class="row no-gutters">
             <div class="col-md-4 element-animate">
-                <a href="works-single.html" class="link-thumbnail">
-                    <h3>
-                        <span class="date">January 31, 2018</span> "Being loved
-                        has taught me how to love"
-                    </h3>
-                    <span class="ion-plus icon"></span>
-                    <img src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Image placeholder" class="img-fluid" />
-                </a>
+                <?php echo $this->Html->link(
+                    $this->Html->tag("h3", 'Mr. Shekhar Karki',  array("class" => "")).
+                    $this->Html->tag("span", "",  array("class" => "ion-plus icon")).
+                    $this->Html->image('shekhar.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                    ["controller"=>"teams", "action"=>"view", 'shekhar'],
+                    ["class"=>"link-thumbnail",
+                        "escape"=>false]
+                    );
+                ?>
             </div>
             <div class="col-md-4 element-animate">
-                <a href="works-single.html" class="link-thumbnail">
-                    <h3>
-                        <span class="date">January 31, 2018</span> Becoming a
-                        perfect parent out of imperfect
-                    </h3>
-                    <span class="ion-plus icon"></span>
-                    <img src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Image placeholder" class="img-fluid" />
-                </a>
+                <?php echo $this->Html->link(
+                    $this->Html->tag("h3", 'Mr. Prabin Shakya',  array("class" => "")).
+                    $this->Html->tag("span", "",  array("class" => "ion-plus icon")).
+                    $this->Html->image('prabin.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                    ["controller"=>"teams", "action"=>"view", 'prabin'],
+                    ["class"=>"link-thumbnail",
+                        "escape"=>false]
+                    );
+                ?>
             </div>
             <div class="col-md-4 element-animate">
-                <a href="works-single.html" class="link-thumbnail">
-                    <h3>
-                        <span class="date">January 31, 2018</span> Home sweet
-                        home
-                    </h3>
-                    <span class="ion-plus icon"></span>
-                    <img src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Image placeholder" class="img-fluid" />
-                </a>
+                <?php echo $this->Html->link(
+                    $this->Html->tag("h3", 'Mr. Prabin Shakya',  array("class" => "")).
+                    $this->Html->tag("span", "",  array("class" => "ion-plus icon")).
+                    $this->Html->image('prabin.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                    ["controller"=>"teams", "action"=>"view", 'prabin'],
+                    ["class"=>"link-thumbnail",
+                        "escape"=>false]
+                    );
+                ?>
             </div>
         </div>
     </div>
@@ -155,72 +139,115 @@
     <div class="container">
         <div class="row justify-content-center mb-3 element-animate">
             <div class="col-md-8 text-center">
-                <h2 class="text-uppercase heading mb-4">OUR TEAM MEMBERS</h2>
+                <h2 class="text-uppercase heading mb-4">OUR PROGRAMS</h2>
             </div>
         </div>
         <div class="row element-animate">
             <div class="major-caousel js-carousel-1 owl-carousel">
                 <div>
                     <div class="media d-block media-custom text-left">
-                        <a href="adoption-single.html"><img
-                                src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Image Placeholder" class="img-fluid" /></a>
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"teams", "action"=>"view", 1],
+                                [ "escape"=>false]
+                            );  
+                        ?>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">
-                                <a href="#" class="text-black">Edward,
-                                    <span class="age">14 yrs. old</span></a>
+                            <?php echo $this->Html->link('Vocational Training ',
+                                    ["controller"=>"teams", "action"=>"view"],
+                                    ["class"=>"text-black",
+                                        "escape"=>false]
+                                    );
+                            ?> 
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                   <div class="media d-block media-custom text-left">
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"teams", "action"=>"view", 1],
+                                [ "escape"=>false]
+                            );  
+                        ?>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">
+                            <?php echo $this->Html->link('HELLO, '.
+                                $this->Html->tag("span", " 14 yrs. old", 
+                                    array("class" => "age")),
+                                    ["controller"=>"teams", "action"=>"view"],
+                                    ["class"=>"text-black",
+                                        "escape"=>false]
+                                    );
+                            ?> 
                             </h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="media d-block media-custom text-left">
-                        <a href="adoption-single.html"><img
-                                src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Image Placeholder" class="img-fluid" /></a>
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"teams", "action"=>"view", 1],
+                                [ "escape"=>false]
+                            );  
+                        ?>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">
-                                <a href="#" class="text-black">Mellisa,
-                                    <span class="age">6 yrs. old</span></a>
+                            <?php echo $this->Html->link('HELLO, '.
+                                $this->Html->tag("span", " 14 yrs. old", 
+                                    array("class" => "age")),
+                                    ["controller"=>"teams", "action"=>"view"],
+                                    ["class"=>"text-black",
+                                        "escape"=>false]
+                                    );
+                            ?> 
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                   <div class="media d-block media-custom text-left">
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"teams", "action"=>"view", 1],
+                                [ "escape"=>false]
+                            );  
+                        ?>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">
+                            <?php echo $this->Html->link('HELLO, '.
+                                $this->Html->tag("span", " 14 yrs. old", 
+                                    array("class" => "age")),
+                                    ["controller"=>"teams", "action"=>"view"],
+                                    ["class"=>"text-black",
+                                        "escape"=>false]
+                                    );
+                            ?> 
                             </h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="media d-block media-custom text-left">
-                        <a href="adoption-single.html"><img
-                                src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Image Placeholder" class="img-fluid" /></a>
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"teams", "action"=>"view", 1],
+                                [ "escape"=>false]
+                            );  
+                        ?>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">
-                                <a href="#" class="text-black">Mark,
-                                    <span class="age">12 yrs. old</span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="media d-block media-custom text-left">
-                        <a href="adoption-single.html"><img
-                                src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Image Placeholder" class="img-fluid" /></a>
-                        <div class="media-body">
-                            <h3 class="mt-0 text-black">
-                                <a href="#" class="text-black">Jessa,
-                                    <span class="age">13 yrs. old</span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="media d-block media-custom text-left">
-                        <a href="adoption-single.html"><img
-                                src="https://images.pexels.com/photos/207962/pexels-photo-207962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="Image Placeholder" class="img-fluid" /></a>
-                        <div class="media-body">
-                            <h3 class="mt-0 text-black">
-                                <a href="#" class="text-black">Ben,
-                                    <span class="age">14 yrs. old</span></a>
+                            <?php echo $this->Html->link('HELLO, '.
+                                $this->Html->tag("span", " 14 yrs. old", 
+                                    array("class" => "age")),
+                                    ["controller"=>"teams", "action"=>"view"],
+                                    ["class"=>"text-black",
+                                        "escape"=>false]
+                                    );
+                            ?> 
                             </h3>
                         </div>
                     </div>
