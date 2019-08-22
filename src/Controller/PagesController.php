@@ -68,14 +68,14 @@ class PagesController extends AppController
         }
     }
 
-    public function contact()
-    {
-        $this->autoRender =false;
-    }
+    // public function contact()
+    // {
+    //     $this->autoRender =false;
+    // }
 
-    public function about($page_type = null)
-    {
+    // public function about($page_type = null)
+    // {
         
-        $this->set('page_type', $page_type);
-    }
+    //     $this->set('page_type', $page_type);
+    // }
 }
