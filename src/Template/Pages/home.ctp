@@ -1,7 +1,7 @@
 <?php $this->set('title_for_layout', 'Shayata Nepal');?>
 <section class="home-slider owl-carousel">
     <div class="slider-item "
-        style="background-image: url('<?php echo $this->request->webroot?>/img/slider/slider2.jpg');">
+        style="background-image: url('<?php echo $this->request->webroot . 'img/slider/slider2.jpg'; ?>');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="slider-item"
-        style="background-image: url('<?php echo $this->request->webroot?>/img/slider/slider1.jpg');">
+        style="background-image: url('<?php echo $this->request->webroot . 'img/slider/slider1.jpg'; ?>');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="slider-item"
-        style="background-image: url('<?php echo $this->request->webroot?>/img/slider/slider3.jpg');">
+        style="background-image: url('<?php echo $this->request->webroot . 'img/slider/slider3.jpg'; ?>');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -61,7 +61,7 @@
         </div>
         <div class="row element-animate">
             <div class="col-md-3">
-                <img src="<?php echo $this->request->webroot . 'img/executive_director.jpg'; ?>"
+                <img src="<?php echo $this->request->webroot . 'img/executive_director.JPG'; ?>"
                     alt="" style="width: 245px; height:262px;" />
             </div>
             <div class="col-lg-9">

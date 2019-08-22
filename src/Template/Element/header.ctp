@@ -47,7 +47,7 @@
 
                     </li> -->
                     <li class="nav-item">
-                        <?php echo $this->Html->link(__('About Us', true), array('controller' => 'pages', 'action' => 'about_us'), array('class' => 'nav-link'));?>
+                        <?php echo $this->Html->link(__('About Us', true), array('controller' => 'pages', 'action' => 'about-us'), array('class' => 'nav-link'));?>
                     </li>
                     <li class="nav-item">
                     <?php echo $this->Html->link(__('Our Team', true), array('controller' => 'teams', 'action' => 'index'), array('class' => 'nav-link'));?>
