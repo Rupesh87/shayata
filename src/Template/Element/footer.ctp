@@ -1,32 +1,27 @@
 <footer class="site-footer" role="contentinfo">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row ">
             <div class="col-md-3 mb-5">
                 <h3>About</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis
-                    consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
-                <p><a href="#">Learn More</a></p>
+                <p>Sahayata Nepal (Help-Nepal) is a Non Governmental Organization, registered under the district administration office, Dhading (registration # 961/067-068) and affiliated.</p>
+                <p><?php echo $this->Html->link(__('Learn More', true), array('controller' => 'pages', 'action' => 'about'));?></p>
             </div>
             <div class="col-md-3 mb-5">
                 <h3>Contact &amp; Address</h3>
                 <ul class="list-unstyled footer-link">
                     <li class="d-flex"><span class="mr-3">A:</span><span class="text-white">34 Street Name, City Name
                             Here, United States</span></li>
-                    <li class="d-flex"><span class="mr-3">T:</span><span class="text-white">+1 242 4942 290</span></li>
-                    <li class="d-flex"><span class="mr-3">E:</span><span class="text-white">info@yourdomain.com</span>
+                    <li class="d-flex"><span class="mr-3">T:</span><span class="text-white"> 01-0402030</span></li>
+                    <li class="d-flex"><span class="mr-3">E:</span><span class="text-white"> nepal.sahayata@gmail.com</span>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3 mb-5">
                 <h3>Quick Links</h3>
                 <ul class="list-unstyled footer-link">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Success Stories</a></li>
-                    <li><a href="#">Waiting Children</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Disclaimers</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><?php echo $this->Html->link(__('About', true), array('controller' => 'pages', 'action' => 'about'));?></li>
+                    <li><?php echo $this->Html->link(__('Our Programs', true), array('controller' => 'pages', 'action' => 'index'));?></li>
+                    <li><?php echo $this->Html->link(__('Our Teams', true), array('controller' => 'index', 'action' => 'about'));?></li>
                 </ul>
             </div>
             <div class="col-md-3">
@@ -42,7 +37,7 @@
         <div class="row">
             <div class="col-12 text-md-center text-left">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                <p>Copyright &copy;
+                <p style="text-align:center">Copyright &copy;
                     <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
                     made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
                         target="_blank">Colorlib</a></p>
