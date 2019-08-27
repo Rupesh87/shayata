@@ -1,22 +1,21 @@
 <footer class="site-footer" role="contentinfo">
     <div class="container">
         <div class="row ">
-            <div class="col-md-3 mb-5">
+            <div class="col-md-3 mb-3.5">
                 <h3>About</h3>
                 <p>Sahayata Nepal (Help-Nepal) is a Non Governmental Organization, registered under the district administration office, Dhading (registration # 961/067-068) and affiliated.</p>
-                <p><?php echo $this->Html->link(__('Learn More', true), array('controller' => 'pages', 'action' => 'about'));?></p>
+                <p><?php echo $this->Html->link(__('Read More', true), array('controller' => 'pages', 'action' => 'about'));?></p>
             </div>
-            <div class="col-md-3 mb-5">
+            <div class="col-md-3 mb-3.5">
                 <h3>Contact &amp; Address</h3>
                 <ul class="list-unstyled footer-link">
-                    <li class="d-flex"><span class="mr-3">A:</span><span class="text-white">34 Street Name, City Name
-                            Here, United States</span></li>
+                    <li class="d-flex"><span class="mr-3">A:</span><span class="text-white">Kathmandu, Nepal</span></li>
                     <li class="d-flex"><span class="mr-3">T:</span><span class="text-white"> 01-0402030</span></li>
                     <li class="d-flex"><span class="mr-3">E:</span><span class="text-white"> nepal.sahayata@gmail.com</span>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-3 mb-5">
+            <div class="col-md-3 mb-3.5">
                 <h3>Quick Links</h3>
                 <ul class="list-unstyled footer-link">
                     <li><?php echo $this->Html->link(__('About', true), array('controller' => 'pages', 'action' => 'about'));?></li>

@@ -499,7 +499,7 @@ header .navbar .cta-btn a:hover {
 
 .owl-carousel.major-caousel .owl-stage-outer {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev, .owl-carousel.major-caousel .owl-nav .owl-next {

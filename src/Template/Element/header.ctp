@@ -2,21 +2,22 @@
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-4">
                     <a href="#"><span class="fa fa-twitter"></span></a>
                     <a href="#"><span class="fa fa-facebook"></span></a>
                     <a href="#"><span class="fa fa-instagram"></span></a>
                     <a href="#"><span class="fa fa-linkedin"></span></a>
                 </div>
-                <div class="col-6 text-right d-sm-flex d-flex">
+                <div class="col-8 text-right d-sm-flex d-flex">
                     <d class="ml-auto">
                         <?php 
-                            echo $this->Html->link($this->Html->tag('i', '',array('class' => 'fa fa-phone') ) . __('  01-0402030'), 
+                            echo $this->Html->link($this->Html->tag('i', '',array('class' => 'fa fa-phone') ) . __(' 01-0402030'), 
                                 array( 'action' => 'contact'), 
                                 array('class' => 'text-white', 'escape' => false));
                             echo $this->Html->link($this->Html->tag('i', '', array('class' => 'fa fa-envelope') ) . __('  nepal.sahayata@gmail.com'), 
                                 array( 'action' => 'contact'), 
                                 array('class' => 'text-white', 'escape' => false));
+                           
                         ?>
                     </d>
                 </div>

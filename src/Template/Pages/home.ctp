@@ -50,7 +50,7 @@
         </div>
     </div>
 </section>
-<section class="section bg-light">
+<section class="section bg-light pb-0">
     <div class="container">
         <div class="row justify-content-center mb-3 element-animate">
             <div class="col-md-8 text-center">
@@ -60,9 +60,9 @@
             </div>
         </div>
         <div class="row element-animate">
-            <div class="col-md-3">
-                <img src="<?php echo $this->request->webroot . 'img/executive_director.JPG'; ?>"
-                    alt="" style="width: 245px; height:262px;" />
+            <div class="col-md-3 col-sm-3">
+                <img src="<?php echo $this->request->webroot . 'img/executive_director1.jpg'; ?>"
+                    alt=""  class="img-fluid" />
             </div>
             <div class="col-lg-9">
                 <div class="about_content">
@@ -83,14 +83,14 @@
                         </p>
                     </div>
                     <div class="button about_button">
-                        <?php echo $this->Html->link('Read more', array('controller' => 'pages', 'action' => 'few_words_from_director'), array('escape' => false,  'class' => "btn btn-primary"));  ?>
+                        <?php echo $this->Html->link('Read more', array('controller' => 'pages', 'action' => 'few_words_from_director'), array('escape' => false,  'class' => "btn btn-primary", 'style' => 'margin-top:-7px'));  ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="section border-t">
+<section class="section border-t pb-0">
     <div class="container">
         <div class="row justify-content-center mb-3 element-animate">
             <div class="col-md-8 text-center">
@@ -135,14 +135,14 @@
         </div>
     </div>
 </section>
-<section class="section bg-light">
+<section class="section bg-light pb-5 pt-4">
     <div class="container">
-        <div class="row justify-content-center mb-3 element-animate">
+        <div class="row justify-content-center element-animate">
             <div class="col-md-8 text-center">
-                <h2 class="text-uppercase heading mb-4">OUR PROGRAMS</h2>
+                <h2 class="text-uppercase heading mb-2">OUR PROGRAMS</h2>
             </div>
         </div>
-        <div class="row element-animate">
+        <div class="row element-animate pb-0">
             <div class="major-caousel js-carousel-1 owl-carousel">
                 <div>
                     <div class="media d-block media-custom text-left">

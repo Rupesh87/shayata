@@ -21,7 +21,7 @@ class ProjectsController  extends AppController
        
     }
 
-    public function view($number = null)
+    public function view()
     {
         # code...
     }
