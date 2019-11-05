@@ -1,5 +1,5 @@
 <section class="home-slider inner-page owl-carousel">
-    <div class="slider-item " style="background-image: url('<?php echo $this->request->webroot . 'img/office.jpg'; ?>');">
+    <div class="slider-item " style="background-image: url('<?php echo $this->request->getAttribute("webroot") . 'img/office.jpg'; ?>');">
 
         <div class="container">
             <div class="row slider-text align-items-center">

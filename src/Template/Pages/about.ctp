@@ -1,4 +1,5 @@
 <?php $this->set('title_for_layout', 'About Us');?>
+<?php $this->set('title', 'About Us');?>
 <?=$this->element('breadcrumb')?>
 
 <section class="section">

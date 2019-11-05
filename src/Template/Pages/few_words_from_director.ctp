@@ -1,4 +1,5 @@
 <?php $this->set('title_for_layout', 'FEW WORDS FROM EXECUTIVE DIRECTOR');?>
+<?php $this->set('title', 'FEW WORDS FROM EXECUTIVE DIRECTOR');?>
 <?=$this->element('breadcrumb')?>
 <section class="section">
     <div class="container">
@@ -6,7 +7,7 @@
             <div class="col-md-12 order-1 main">
                 <div class="row">
                     <div class="col-md-5 mb-5">
-                        <img src="../img/executive_director.jpg" alt="Image placeholder" class="img-fluid" style="margin-top: -30px;">
+                        <?= $this->Html->image('executive_director.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid", 'style' => 'margin-top: -30px;')); ?>
                     </div>
                     <div class="col-md-7 mt-10 body_text ">
                         <b class="section-title">Few words from Executive Director</b>

@@ -26,7 +26,8 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <?php echo $this->Html->link(__('SHAYATA NEPAL', true), array('controller' => 'pages', 'action' => 'index'), array('class' => 'navbar-brand'));?>
+            <?= $this->Html->image('logo.png', array( 'alt'=>"Logo" , 'class'=>"img-fluid", 'style' => 'width: 44px; margin-right:5px')); ?>
+            <?php echo $this->Html->link(__('SHAYATA NEPAL', true), array('controller' => 'pages', 'action' => 'home'), array('class' => 'navbar-brand'));?>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
                 aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

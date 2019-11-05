@@ -1,7 +1,8 @@
 <?php $this->set('title_for_layout', 'Shayata Nepal');?>
+<?php $this->set('title', 'Shayata Nepal');?>
 <section class="home-slider owl-carousel">
     <div class="slider-item "
-        style="background-image: url('<?php echo $this->request->webroot . 'img/slider/slider2.jpg'; ?>');">
+        style="background-image: url('<?php echo $this->request->getAttribute("webroot") . 'img/slider/slider2.jpg'; ?>');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -18,7 +19,7 @@
     </div>
 
     <div class="slider-item"
-        style="background-image: url('<?php echo $this->request->webroot . 'img/slider/slider1.jpg'; ?>');">
+        style="background-image: url('<?php echo $this->request->getAttribute("webroot") . 'img/slider/slider1.jpg'; ?>');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -33,7 +34,7 @@
         </div>
     </div>
     <div class="slider-item"
-        style="background-image: url('<?php echo $this->request->webroot . 'img/slider/slider3.jpg'; ?>');">
+        style="background-image: url('<?php echo $this->request->getAttribute("webroot") . 'img/slider/slider3.jpg'; ?>');">
         <div class="container">
             <div class="row slider-text align-items-center">
                 <div class="col-md-6 col-sm-12 element-animate">
@@ -61,8 +62,7 @@
         </div>
         <div class="row element-animate">
             <div class="col-md-3 col-sm-3">
-                <img src="<?php echo $this->request->webroot . 'img/executive_director1.jpg'; ?>"
-                    alt=""  class="img-fluid" />
+                <?= $this->Html->image('executive_director1.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")); ?>
             </div>
             <div class="col-lg-9">
                 <div class="about_content">
@@ -123,10 +123,10 @@
             </div>
             <div class="col-md-4 element-animate">
                 <?php echo $this->Html->link(
-                    $this->Html->tag("h3", 'Mr. Prabin Shakya',  array("class" => "")).
+                    $this->Html->tag("h3", 'Mr. Umesh Kaji Manandhar',  array("class" => "")).
                     $this->Html->tag("span", "",  array("class" => "ion-plus icon")).
-                    $this->Html->image('prabin.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
-                    ["controller"=>"teams", "action"=>"view", 'prabin'],
+                    $this->Html->image('umesh.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                    ["controller"=>"teams", "action"=>"view", 'umesh'],
                     ["class"=>"link-thumbnail",
                         "escape"=>false]
                     );
@@ -147,15 +147,15 @@
                 <div>
                     <div class="media d-block media-custom text-left">
                     <?php 
-                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
-                                ["controller"=>"teams", "action"=>"view", 1],
+                        echo  $this->Html->link($this->Html->image('vocation_training.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"projects", "action"=>"view", 'vocation_training'],
                                 [ "escape"=>false]
                             );  
                         ?>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">
                             <?php echo $this->Html->link('Vocational Training ',
-                                    ["controller"=>"teams", "action"=>"view"],
+                                    ["controller"=>"projects", "action"=>"view", 'vocation_training'],
                                     ["class"=>"text-black",
                                         "escape"=>false]
                                     );
@@ -165,6 +165,46 @@
                     </div>
                 </div>
                 <div>
+                   <div class="media d-block media-custom text-left">
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('drinking_water.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"projects", "action"=>"view", 'drinking_water'],
+                                [ "escape"=>false]
+                            );  
+                        ?>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">
+                            <?php echo $this->Html->link('Drinking Water Supply',
+                                    ["controller"=>"projects", "action"=>"view", 'drinking_water'],
+                                    ["class"=>"text-black",
+                                        "escape"=>false]
+                                    );
+                            ?> 
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="media d-block media-custom text-left">
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('dustbin.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                                ["controller"=>"projects", "action"=>"view", 'waste_management'],
+                                [ "escape"=>false]
+                            );  
+                        ?>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">
+                            <?php echo $this->Html->link('Solid Waste Management',
+                                ["controller"=>"projects", "action"=>"view", 'waste_management'],
+                                ["class"=>"text-black",
+                                    "escape"=>false]
+                                );
+                            ?>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div>
                    <div class="media d-block media-custom text-left">
                     <?php 
                         echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
@@ -186,8 +226,8 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="media d-block media-custom text-left">
+                <div> -->
+                   <!--  <div class="media d-block media-custom text-left">
                     <?php 
                         echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
                                 ["controller"=>"teams", "action"=>"view", 1],
@@ -206,51 +246,7 @@
                             ?> 
                             </h3>
                         </div>
-                    </div>
-                </div>
-                <div>
-                   <div class="media d-block media-custom text-left">
-                    <?php 
-                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
-                                ["controller"=>"teams", "action"=>"view", 1],
-                                [ "escape"=>false]
-                            );  
-                        ?>
-                        <div class="media-body">
-                            <h3 class="mt-0 text-black">
-                            <?php echo $this->Html->link('HELLO, '.
-                                $this->Html->tag("span", " 14 yrs. old", 
-                                    array("class" => "age")),
-                                    ["controller"=>"teams", "action"=>"view"],
-                                    ["class"=>"text-black",
-                                        "escape"=>false]
-                                    );
-                            ?> 
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="media d-block media-custom text-left">
-                    <?php 
-                        echo  $this->Html->link($this->Html->image('demo.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
-                                ["controller"=>"teams", "action"=>"view", 1],
-                                [ "escape"=>false]
-                            );  
-                        ?>
-                        <div class="media-body">
-                            <h3 class="mt-0 text-black">
-                            <?php echo $this->Html->link('HELLO, '.
-                                $this->Html->tag("span", " 14 yrs. old", 
-                                    array("class" => "age")),
-                                    ["controller"=>"teams", "action"=>"view"],
-                                    ["class"=>"text-black",
-                                        "escape"=>false]
-                                    );
-                            ?> 
-                            </h3>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- END slider -->

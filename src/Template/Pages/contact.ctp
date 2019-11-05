@@ -1,4 +1,5 @@
 <?php $this->set('title_for_layout', 'Contact'); ?>
+<?php $this->set('title', 'Contact');?>
 <?= $this->element('breadcrumb') ?>
 <section class="section">
     <div class="container">
@@ -9,14 +10,13 @@
                 <div class="sidebar-box">
                     <h3 class="mb-4">Contact Details</h3>
                     <h5 class="text-uppercase mb-3 h6 text-black">Address</h5>
-                    <p class="mb-5">98 West 21th Street, <br> Suite 721 <br> New York NY 10016</p>
+                    <p class="mb-5">Kathmandu, Nepal</p>
 
                     <h5 class="text-uppercase mb-3 h6 text-black">Email Us At</h5>
-                    <p class="mb-5"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a> <br> <a
-                            href="mailto:customer@yourdomain.com">customer@yourdomain.com</a></p>
+                    <p class="mb-5"><a href="mailto:nepal.sahayata@gmail.com">nepal.sahayata@gmail.com</a></p>
 
                     <h5 class="text-uppercase mb-3 h6 text-black">Call Us</h5>
-                    <p>Phone: (+1) 435 3533 <br> Mobile: (+1) 435 3533 <br> Fax: (+1) 435 3534</p>
+                    <p>Phone: 01-0402030</p>
                 </div>
 
 

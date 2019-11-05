@@ -158,6 +158,7 @@ abstract class PdoAdapter extends AbstractAdapter implements DirectActionInterfa
      */
     public function execute($sql)
     {
+        $sql = rtrim($sql, "; \t\n\r\0\x0B") . ';';
         $this->verboseLog($sql);
 
         if ($this->isDryRunEnabled()) {
@@ -262,6 +263,17 @@ abstract class PdoAdapter extends AbstractAdapter implements DirectActionInterfa
             return 'null';
         }
 
+        return $this->getConnection()->quote($value);
+    }
+
+    /**
+     * Quotes a database string.
+     *
+     * @param string $value  The string to quote
+     * @return string
+     */
+    protected function quoteString($value)
+    {
         return $this->getConnection()->quote($value);
     }
 
@@ -416,6 +428,47 @@ abstract class PdoAdapter extends AbstractAdapter implements DirectActionInterfa
                 $this->quoteColumnName('start_time')
             )
         );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setBreakpoint(MigrationInterface $migration)
+    {
+        return $this->markBreakpoint($migration, true);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function unsetBreakpoint(MigrationInterface $migration)
+    {
+        return $this->markBreakpoint($migration, false);
+    }
+
+    /**
+     * Mark a migration breakpoint.
+     *
+     * @param \Phinx\Migration\MigrationInterface $migration The migration target for the breakpoint
+     * @param bool $state The required state of the breakpoint
+     *
+     * @return \Phinx\Db\Adapter\AdapterInterface
+     */
+    protected function markBreakpoint(MigrationInterface $migration, $state)
+    {
+        $this->query(
+            sprintf(
+                'UPDATE %1$s SET %2$s = %3$s, %4$s = %4$s WHERE %5$s = \'%6$s\';',
+                $this->getSchemaTableName(),
+                $this->quoteColumnName('breakpoint'),
+                $this->castToBool($state),
+                $this->quoteColumnName('start_time'),
+                $this->quoteColumnName('version'),
+                $migration->getVersion()
+            )
+        );
+
+        return $this;
     }
 
     /**
