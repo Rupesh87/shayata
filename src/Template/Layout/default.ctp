@@ -4,10 +4,14 @@
 <head>
     <?=$this->Html->charset()?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>
+
         <?=$title?>
     </title>
-
+<?php 
+    echo $this->Html->meta('favicon.ico','/favicon.ico', array('type' => 'icon'));     
+?>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
