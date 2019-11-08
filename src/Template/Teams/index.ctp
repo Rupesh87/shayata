@@ -14,7 +14,7 @@
                 ?>
               <div class="media-body">
                 <h3 class="mt-0 text-black">
-                    <?php echo $this->Html->link('Mr. Shekhar Karki, ',
+                    <?php echo $this->Html->link('Mr. Shekhar Karki',
                             ["controller"=>"teams", "action"=>"view", 'shekhar'],
                             ["class"=>"text-black",
                                 "escape"=>false]
@@ -34,7 +34,7 @@
                 ?>
               <div class="media-body">
                 <h3 class="mt-0 text-black">
-                    <?php echo $this->Html->link('Mr. Prabin Shakya, ',
+                    <?php echo $this->Html->link('Mr. Prabin Shakya',
                             ["controller"=>"teams", "action"=>"view", 'prabin'],
                             ["class"=>"text-black",
                                 "escape"=>false]
