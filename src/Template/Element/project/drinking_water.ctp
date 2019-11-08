@@ -4,27 +4,28 @@
             <div class="col-md-12 order-1 main">
                 <div class="row">
                     <div class="col-md-5 mb-5">
-                        <?= $this->Html->image('drinking_water.jpg', array( 'alt'=>"drinking_water" , 'class'=>"img-fluid")); ?>
+                        <?= $this->Html->image('drinking_water.jpg', array( 'alt'=>"drinking_water" , 'class'=>"img-fluid dynImage", "style"=> "max-width:350px; max-height:400px;")); ?>
                     </div>
                     <div class="col-md-7">
+                        <b>WASH Program</b>
 <div id="accordion">
-    <div class="card mb-2">
+<div class="card mb-2">
     <h5 class="mb-0">
-        <a href="#" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Drinking water supply scheme
+        <a href="#" class="button btn btn-link" data-imagename = "drinking_water" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Establishment of drinking water facilities
         <span class="icon ion-chevron-down"></span>
         </a>
     </h5>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
         <div class="card-body">
-        In the year 2012,  Gajuri Phalatae Drinking water supply project was completed . This project nearly 105 household and nearly, 600 persons were directly benefited with the project. For implementing the project the support was provided by Depac Nepal.
+        As sanitary toilets , drinking water facilities of the school were also get destroyed during the earthquake, 2015. So, with the support of PRAGYA Solutions, drinking water facilities were established in two different schools namely, Keureni Basic School and Panchakanya Basic School.
         </div>
     </div>
     </div>
+    
     <div class="card mb-2">
     <h5 class="mb-0">
-        <a href="#" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <a href="#" class="button btn btn-link collapsed" data-imagename = "toilet" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         Toilet construction in the schools
         <span class="icon ion-chevron-down"></span>
         </a>
@@ -35,20 +36,21 @@
         </div>
     </div>
     </div>
-
-    <div class="card mb-2">
+<div class="card mb-2">
     <h5 class="mb-0">
-        <a href="#" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Establishment of drinking water facilities
+        <a href="#" class="button btn btn-link collapsed" data-imagename = "pipeline" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Drinking water supply scheme
         <span class="icon ion-chevron-down"></span>
         </a>
     </h5>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
         <div class="card-body">
-        As sanitary toilets , drinking water facilities of the school were also get destroyed during the earthquake, 2015. So, with the support of PRAGYA Solutions, drinking water facilities were established in two different schools namely, Keureni Basic School and Panchakanya Basic School.
+        In the year 2012,  Gajuri Phalatae Drinking water supply project was completed . This project nearly 105 household and nearly, 600 persons were directly benefited with the project. For implementing the project the support was provided by Depac Nepal.
         </div>
     </div>
     </div>
+    
     </div>
 
 </div>
@@ -71,3 +73,14 @@
     text-align: justify;
 }
 </style>
+<script>
+    $( document ).ready(function() {
+        $('.button').click(function(e) {
+            var imgName = $(this).attr("data-imagename");
+            // console.log( $(this).val( $(this).attr("imagename") ));
+
+            $('.dynImage').attr('src', '/img/'+imgName+'.jpg');
+        })
+        // console.log( "ready!" );
+    });
+</script>

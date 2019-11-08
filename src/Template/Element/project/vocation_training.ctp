@@ -15,7 +15,7 @@
                         <li>Waiter training</li>
                         <li>Cooking training</li>
                         <li>Beautician training</li></ul>
-                        <p class="mb-5">The duration of these training is range from Six months to Three months
+                        <p class="mb-5">The duration of these training is range from six months to three months.
 After earthquake, 2015, it has become prime essence to reestablish the economic structure. So, with the help of Pragya Solutions, vocational training on organic farming,  beekeeping , poultry farming, goat rearing and candle making was provided to the inhabitants of different villages of Dhading District.</p>
                     </div>
                 </div>

@@ -9,6 +9,8 @@
     <?= $this->element('project/drinking_water'); ?>
 <?php } elseif ($name == 'waste_management') { ?>
     <?= $this->element('project/waste_management'); ?>
+<?php } elseif ($name == 'livelihood_support') { ?>
+    <?= $this->element('project/livelihood_support'); ?>
 <?php } ?>
 <style>
 .body_text p {

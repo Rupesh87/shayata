@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-4">
                     <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.facebook.com/Sahayata-Nepal-110497683729505/"><span class="fa fa-facebook"></span></a>
                     <a href="#"><span class="fa fa-instagram"></span></a>
                     <a href="#"><span class="fa fa-linkedin"></span></a>
                 </div>

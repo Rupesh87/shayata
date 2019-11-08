@@ -27,7 +27,7 @@
                 <h3>Social</h3>
                 <ul class="list-unstyled footer-link d-flex footer-social">
                     <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-                    <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="https://www.facebook.com/Sahayata-Nepal-110497683729505/" class="p-2"><span class="fa fa-facebook"></span></a></li>
                     <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
                     <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
                 </ul>

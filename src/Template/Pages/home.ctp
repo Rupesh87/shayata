@@ -9,7 +9,7 @@
                     <!-- <span class="child-name cursive">Celine Richardson, 14 yrs. old</span> -->
                     <h1>OUR MISSION</h1>
                     <p>
-                        Facilitate to ensure healthy, educated and affluent life
+                        To ensure healthy, educated and affluent life
                         in clean environment by means of awareness, advocacy and
                         social empowerment for the social transformation.
                     </p>
@@ -26,7 +26,7 @@
                     <!-- <span class="child-name cursive">Mark Rodriguez, 12 yrs. old</span> -->
                     <h1>OUR VISION</h1>
                     <p>
-                        Sahayata Nepal envision of healthy life in clean
+                        Sahayata Nepal envision, the healthy life in clean
                         environment with educated and affluent society.
                     </p>
                 </div>
@@ -147,7 +147,7 @@
                 <div>
                     <div class="media d-block media-custom text-left">
                     <?php 
-                        echo  $this->Html->link($this->Html->image('vocation_training.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                        echo  $this->Html->link($this->Html->image('vocation_training.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid", 'style'=>"max-height:358px")),
                                 ["controller"=>"projects", "action"=>"view", 'vocation_training'],
                                 [ "escape"=>false]
                             );  
@@ -167,14 +167,14 @@
                 <div>
                    <div class="media d-block media-custom text-left">
                     <?php 
-                        echo  $this->Html->link($this->Html->image('drinking_water.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                        echo  $this->Html->link($this->Html->image('drinking_water.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid", 'style'=>"max-height:358px")),
                                 ["controller"=>"projects", "action"=>"view", 'drinking_water'],
                                 [ "escape"=>false]
                             );  
                         ?>
                         <div class="media-body">
                             <h3 class="mt-0 text-black">
-                            <?php echo $this->Html->link('Drinking Water Supply',
+                            <?php echo $this->Html->link('WASH Program',
                                     ["controller"=>"projects", "action"=>"view", 'drinking_water'],
                                     ["class"=>"text-black",
                                         "escape"=>false]
@@ -187,7 +187,7 @@
                 <div>
                     <div class="media d-block media-custom text-left">
                     <?php 
-                        echo  $this->Html->link($this->Html->image('dustbin.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid")),
+                        echo  $this->Html->link($this->Html->image('dustbin.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid" , 'style'=>"max-height:358px")),
                                 ["controller"=>"projects", "action"=>"view", 'waste_management'],
                                 [ "escape"=>false]
                             );  
@@ -196,6 +196,26 @@
                             <h3 class="mt-0 text-black">
                             <?php echo $this->Html->link('Solid Waste Management',
                                 ["controller"=>"projects", "action"=>"view", 'waste_management'],
+                                ["class"=>"text-black",
+                                    "escape"=>false]
+                                );
+                            ?>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="media d-block media-custom text-left">
+                    <?php 
+                        echo  $this->Html->link($this->Html->image('livelehood_support.jpg', array( 'alt'=>"Image Placeholder" , 'class'=>"img-fluid", 'style'=>"max-height:358px")),
+                                ["controller"=>"projects", "action"=>"view", 'livelihood_support'],
+                                [ "escape"=>false]
+                            );  
+                        ?>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">
+                            <?php echo $this->Html->link('Livelihood Support Program',
+                                ["controller"=>"projects", "action"=>"view", 'livelihood_support'],
                                 ["class"=>"text-black",
                                     "escape"=>false]
                                 );
